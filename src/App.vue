@@ -1,32 +1,43 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div id="wrap">
+      <app-header :propsData="num"></app-header>
+      <!--      <app-content v-on:onEmit="increaseNumber"></app-content>-->
+      <item-list @emitName="paramNum"></item-list>
+      <app-footer></app-footer>
     </div>
-    <router-view />
   </div>
 </template>
+<script>
+import AppHeader from "./components/common/AppHeader";
+import AppFooter from "./components/common/AppFooter";
+import ItemList from "./components/layout/ItemList";
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+export default {
+  components: {
+    AppFooter, AppHeader, ItemList
+  },
+  data() {
+    return {
+      num: 0
     }
-  }
+  },
+  // emit
+  methods: {
+    // increaseNumber() {
+    //   this.num++;
+    // },
+    paramNum(value) {
+      this.num = value;
+    }
+  },
+  mounted() {
+  },
+  updated() {
+  },
 }
+</script>
+
+<style scoped>
+
 </style>
