@@ -6,7 +6,6 @@
 
 <script>
 import ListItem from "../components/common/ListItem";
-import {} from "@/api";
 
 export default {
   name: "ListView",
@@ -33,7 +32,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-
-</style>

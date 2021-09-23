@@ -1,20 +1,27 @@
 <template>
   <div>
     <h1>충전 메인페이지</h1>
-<!--    <app-content></app-content>-->
+    <h3>watch</h3>
+    <h5>api call, route.push()</h5>
+    <p>원본 메시지: "{{ message }}"</p>
+    <p>역순으로 표시한 메시지: "{{ reversedMessage }}"</p>
   </div>
 </template>
 
 <script>
-// import AppContent from "../components/layout/AppContent";
 
 export default {
-  components: {
-    // AppContent
+  name: "chargeMain",
+  data() {
+    return {
+      message: '안녕하세요',
+      reversedMessage: '',
+    }
   },
+  watch: {
+    message: function (newVal) {
+      this.reversedMessage = newVal.split('').reverse().join('')
+    }
+  }
 }
 </script>
-
-<style scoped>
-
-</style>

@@ -1,10 +1,11 @@
 <template>
   <div>
-    ItemView
+    <h1>ItemView</h1>
   </div>
 </template>
 
 <script>
 export default {
+  name: "ItemView",
 }
 </script>

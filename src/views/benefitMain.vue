@@ -9,7 +9,3 @@ export default {
   name: "benefitMain"
 }
 </script>
-
-<style scoped>
-
-</style>

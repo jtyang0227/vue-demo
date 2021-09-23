@@ -6,10 +6,6 @@
 
 <script>
 export default {
-  name: "myPage"
+  name: "myPage",
 }
 </script>
-
-<style scoped>
-
-</style>

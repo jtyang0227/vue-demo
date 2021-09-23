@@ -1,16 +1,22 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
+
+import Login from "../views/Login";
+import MyPage from "../views/myPage";
 import UseMain from "../views/useMain";
 import ChargeMain from "../views/chargeMain";
 import BenefitMain from "../views/benefitMain";
-import MyPage from "../views/myPage";
-import Login from "../views/Login";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: '/',
+    name: 'Login',
+    component: Login
+  },
+  {
+    path: '/useMain',
     name: 'useMain',
     component: UseMain
   },
@@ -28,11 +34,6 @@ const routes = [
     path: '/myPage',
     name: 'myPage',
     component: MyPage
-  },
-  {
-    path: '/login',
-    name: 'Login',
-    component: Login
   }
 ]
 

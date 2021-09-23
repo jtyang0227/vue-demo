@@ -13,6 +13,7 @@
 
 <script>
 // import UseMain from "./useMain";
+
 export default {
   // components: {UseMain},
   data() {
