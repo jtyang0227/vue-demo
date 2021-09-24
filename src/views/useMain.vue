@@ -5,10 +5,9 @@
     <p>원본 메시지: "{{ message }}"</p>
     <p>역순으로 표시한 메시지: "{{ reversedMessage }}"</p>
 
-    <button v-on:click="changeNameSetter('yang jongtae')">Change Name (setter)</button><br>
+    <button v-on:click="changeNameSetter('yang jt')">Change Name (setter)</button><br>
     firstName : {{ firstName }}<br>
     lastName : {{ lastName }}<hr>
-
   </div>
 </template>
 

@@ -9,7 +9,3 @@ export default {
   name: "ListItem"
 }
 </script>
-
-<style scoped>
-
-</style>

@@ -6,16 +6,15 @@
 <!--             v-on:keyup.enter="onEmit"-->
 <!--      />-->
 <!--      <button v-on:click="onEmit">onEmit</button>-->
+
       <button v-on:click="addNumber">addNumber</button>
     </div>
   </section>
 </template>
 
 <script>
-// import UseMain from "./useMain";
 
 export default {
-  // components: {UseMain},
   data() {
     return {
       emitData: '',
@@ -32,7 +31,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-
-</style>

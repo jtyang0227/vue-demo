@@ -1,11 +1,9 @@
 <template>
   <div id="app">
-    <div id="wrap">
-      <app-header :propsData="num"></app-header>
-      <!--      <app-content v-on:onEmit="increaseNumber"></app-content>-->
-      <item-list @emitName="paramNum"></item-list>
-      <app-footer></app-footer>
-    </div>
+    <!--      <app-content v-on:onEmit="increaseNumber"></app-content>-->
+    <app-header :propsData="num"></app-header>
+    <item-list @emitName="paramNum"></item-list>
+    <app-footer></app-footer>
   </div>
 </template>
 <script>
@@ -22,12 +20,15 @@ export default {
       num: 0
     }
   },
-  // emit
+
   methods: {
     // increaseNumber() {
     //   this.num++;
     // },
+
+    // emit
     paramNum(value) {
+      alert('emit : '+value);
       this.num = value;
     }
   },

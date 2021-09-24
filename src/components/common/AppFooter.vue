@@ -1,7 +1,13 @@
 <template>
   <footer>
-    <h5>footer</h5>
-    <app-address message="messageString"></app-address>
+    <hr>
+    <app-address  v-bind:message="messageString">
+      <template #address="{ returnData }">
+        <address>
+        {{ returnData }}
+        </address>
+      </template>
+    </app-address>
   </footer>
 </template>
 
@@ -12,14 +18,12 @@ export default {
   components: {
     AppAddress,
   },
+
   data() {
     return {
-      messageString: "props 전달합니다."
+      // 상위 컴퍼넌트(slot)에서 데이터 전달하는 방법
+      messageString: "원피스",
     }
   },
 }
 </script>
-
-<style scoped>
-
-</style>
