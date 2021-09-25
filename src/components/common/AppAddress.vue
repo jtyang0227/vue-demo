@@ -8,7 +8,6 @@
 
 <script>
 export default {
-  name: "address",
   // 하위 컴퍼넌트(slot)에서 데이터 전달하는 방법
   data() {
     return {

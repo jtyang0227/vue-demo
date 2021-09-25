@@ -1,12 +1,12 @@
-import loginAPI from './loginAPI'
+import axios from 'axios'
+import urlInit from '../config/urlInit'
 
-export default {
-  async login (uid, password) {
-    try {
-      const loginResponse = await loginAPI.login(uid, password)
-      return loginResponse
-    } catch (err) {
-      console.error(err)
-    }
+const token = document.head.querySelector('meta[name="csrf-token"]') || ''
+
+export default axios.create({
+  baseURL: urlInit.webBaseURL,
+  headers: {
+    'X-Requested-With': 'XMLHttpRequest',
+    'X-CSRF-TOKEN': token
   }
-}
+})

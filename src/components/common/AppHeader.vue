@@ -21,9 +21,9 @@
       |
       <router-link to="/benefitMain">해택</router-link>
       |
-      <router-link to="/myPage">마이페이지</router-link>
+      <router-link to="/myPageMain">마이페이지</router-link>
       |
-      <router-link to="/login">로그인</router-link>
+      <router-link to="/memberLogin">로그인</router-link>
       <hr>
     </div>
     <div style="background-color: grey">

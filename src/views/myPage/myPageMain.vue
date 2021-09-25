@@ -10,10 +10,9 @@
 </template>
 
 <script>
-import BaseLayout from '../components/layout/BaseLayout';
+import BaseLayout from '../../components/layout/BaseLayout';
 
 export default {
-  name: "myPage",
   components: {
     BaseLayout
   },

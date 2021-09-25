@@ -20,7 +20,6 @@ export default {
       lastName: '이름'
     }
   },
-  components: {},
   computed: {
     // getter
     reversedMessage: function () {
