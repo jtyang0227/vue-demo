@@ -1,5 +1,25 @@
-// const webpack = require('webpack');
-// const path =  require('path');
+const webpack = require('webpack');
+const path =  require('path');
+
+module.exports = {
+  css: {
+    requireModuleExtension: false,
+    loaderOptions: {
+      scss: {
+        // sass-lader version-8: data가 아닌 prependData, 그리고 그 이상은 additionalData
+        prependData: `
+          @import "@/assets/styles/_variables.scss";
+          @import "@/assets/styles/_mixins.scss";
+          @import "@/assets/styles/_common.scss";
+          @import "@/assets/styles/_main.scss";
+        `
+      }
+    }
+  }
+}
+
+
+
 //
 // module.exports = {
 //   lintOnSave : false,

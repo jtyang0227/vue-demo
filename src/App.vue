@@ -1,9 +1,9 @@
 <template>
-  <div id="app">
+  <div id="app" class="app">
     <!--      <app-content v-on:onEmit="increaseNumber"></app-content>-->
-    <app-header :propsData="num"></app-header>
-    <item-list @emitName="paramNum"></item-list>
-    <app-footer></app-footer>
+    <app-header :propsData="num" />
+    <item-list @emitName="paramNum" />
+    <app-footer />
   </div>
 </template>
 <script>

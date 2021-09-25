@@ -1,0 +1,26 @@
+@import "../styles/mixins";
+@import "../styles/variables";
+
+@include mobile {
+  .app {
+    background-color: bisque;
+    width: #{$breakpoint-mobile};
+    height: 100vh;
+  }
+}
+
+@include tablet {
+  .app {
+    background-color: beige;
+    width: #{$breakpoint-tablet};
+    height: 100vh;
+  }
+}
+
+@include desktop {
+  .app {
+    background-color: aliceblue;
+    width: #{$breakpoint-desktop};
+    height: 100vh;
+  }
+}

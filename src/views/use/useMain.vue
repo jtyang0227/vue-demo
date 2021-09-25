@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="useMain">
     <h1>사용 메인페이지</h1>
     <h2>computed</h2>
     <p>원본 메시지: "{{ message }}"</p>
@@ -47,3 +47,9 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+.useMain {
+  background-color: royalblue;
+}
+</style>
