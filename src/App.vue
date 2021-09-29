@@ -1,6 +1,5 @@
 <template>
-  <div id="app" class="app">
-    <!--      <app-content v-on:onEmit="increaseNumber"></app-content>-->
+  <div id="app">
     <app-header :propsData="num" />
     <item-list @emitName="paramNum" />
     <app-footer />
@@ -15,6 +14,7 @@ export default {
   components: {
     AppFooter, AppHeader, ItemList
   },
+
   data() {
     return {
       num: 0
@@ -22,13 +22,10 @@ export default {
   },
 
   methods: {
-    // increaseNumber() {
-    //   this.num++;
-    // },
-
-    // emit
+    // Emit
     paramNum(value) {
-      alert('emit : '+value);
+      console.log('emit value callback');
+      // alert('emit : '+value);
       this.num = value;
     }
   },

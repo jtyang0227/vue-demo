@@ -7,7 +7,7 @@
 <!--      />-->
 <!--      <button v-on:click="onEmit">onEmit</button>-->
 
-      <button v-on:click="addNumber">addNumber</button>
+      <button @click="addNumber">addNumber</button>
     </div>
   </section>
 </template>
@@ -26,6 +26,7 @@ export default {
     // },
     addNumber() {
       // emit event name : increase
+      console.log('emit value call');
       this.$emit('emitName', 10);
     }
   }

@@ -8,10 +8,10 @@ module.exports = {
       scss: {
         // sass-lader version-8: data가 아닌 prependData, 그리고 그 이상은 additionalData
         prependData: `
-          @import "@/assets/styles/_variables.scss";
-          @import "@/assets/styles/_mixins.scss";
-          @import "@/assets/styles/_common.scss";
-          @import "@/assets/styles/_main.scss";
+          @import "@/assets/scss/_variables.scss";
+          @import "@/assets/scss/_mixins.scss";
+          @import "@/assets/scss/_common.scss";
+          @import "@/assets/scss/_main.scss";
         `
       }
     }

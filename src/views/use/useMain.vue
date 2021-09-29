@@ -5,9 +5,11 @@
     <p>원본 메시지: "{{ message }}"</p>
     <p>역순으로 표시한 메시지: "{{ reversedMessage }}"</p>
 
-    <button v-on:click="changeNameSetter('yang jt')">Change Name (setter)</button><br>
+    <button v-on:click="changeNameSetter('yang jt')">Change Name (setter)</button>
+    <br>
     firstName : {{ firstName }}<br>
-    lastName : {{ lastName }}<hr>
+    lastName : {{ lastName }}
+    <hr>
   </div>
 </template>
 
@@ -25,7 +27,7 @@ export default {
     reversedMessage: function () {
       // `this` 는 vm 인스턴스를 가리킵니다.
       console.log(this);
-      return this.message.split('').reverse().join('')
+      return this.message.split('').reverse().join('');
     },
 
     fullName: {
@@ -41,15 +43,9 @@ export default {
   },
 
   methods: {
-    changeNameSetter: function (newName) {
+    changeNameSetter(newName) {
       this.fullName = newName;
     }
   },
 };
 </script>
-
-<style lang="scss">
-.useMain {
-  background-color: royalblue;
-}
-</style>

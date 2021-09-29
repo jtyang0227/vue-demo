@@ -1,8 +1,8 @@
-@import "../styles/mixins";
-@import "../styles/variables";
+@import "../scss/mixins";
+@import "../scss/variables";
 
 @include mobile {
-  .app {
+  #app {
     background-color: bisque;
     width: #{$breakpoint-mobile};
     height: 100vh;
@@ -10,7 +10,7 @@
 }
 
 @include tablet {
-  .app {
+  #app {
     background-color: beige;
     width: #{$breakpoint-tablet};
     height: 100vh;
@@ -18,7 +18,7 @@
 }
 
 @include desktop {
-  .app {
+  #app {
     background-color: aliceblue;
     width: #{$breakpoint-desktop};
     height: 100vh;
