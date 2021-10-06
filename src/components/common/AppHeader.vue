@@ -29,8 +29,10 @@
     <div style="background-color: grey">
       <router-view/>
     </div>
-
-    components return data : {{ propsData }}
+    <h5>AppHeader</h5>
+    <p>
+      components return data : {{ propsData }}
+    </p>
   </header>
 </template>
 
@@ -38,7 +40,7 @@
 import AppHeaderLayout from '../layout/AppHeaderLayout.vue';
 
 export default {
-  components: { AppHeaderLayout },
+  components: {AppHeaderLayout},
   props: ['propsData'],
   data() {
     return {

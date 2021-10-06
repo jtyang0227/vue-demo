@@ -1,13 +1,13 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 
-import MemberLogin from "../views/member/login/memberLogin";
-import MemberJoin from "../views/member/join/memberJoin";
-import MyPageMain from "../views/myPage/myPageMain";
-import UseMain from "../views/use/useMain";
-import ChargeMain from "../views/charge/chargeMain";
-import BenefitMain from "../views/benefit/benefitMain";
-import NotFound from '../views/error';
+const MemberLogin = () => import("../views/member/login/memberLogin");
+const MemberJoin = () => import("../views/member/join/memberJoin");
+const MyPageMain = () => import("../views/myPage/myPageMain");
+const UseMain = () => import("../views/use/useMain");
+const ChargeMain = () => import("../views/charge/chargeMain");
+const BenefitMain = () => import("../views/benefit/benefitMain");
+const NotFound = () => import("../views/error");
 
 Vue.use(VueRouter);
 

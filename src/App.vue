@@ -1,8 +1,9 @@
 <template>
   <div id="app">
-    <app-header :propsData="num" />
-    <item-list @emitName="paramNum" />
-    <app-footer />
+    <app-header :propsData="num"></app-header>
+    <!--  emit(1)  -->
+    <item-list @emitName="paramNum"></item-list>
+    <app-footer></app-footer>
   </div>
 </template>
 <script>
@@ -22,10 +23,10 @@ export default {
   },
 
   methods: {
-    // Emit
+    // emit(2)
     paramNum(value) {
       console.log('emit value callback');
-      // alert('emit : '+value);
+      alert('emit : ' + value);
       this.num = value;
     }
   },

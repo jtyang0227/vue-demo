@@ -1,10 +1,10 @@
 <template>
   <footer>
     <hr>
-    <app-address  v-bind:message="messageString">
-      <template #address="{ returnData }">
+    <app-address v-bind:message="messageString">
+      <template v-slot:address="{ returnData }">
         <address>
-        {{ returnData }}
+          {{ returnData }}
         </address>
       </template>
     </app-address>
@@ -22,7 +22,7 @@ export default {
   data() {
     return {
       // 상위 컴퍼넌트(slot)에서 데이터 전달하는 방법
-      messageString: "slot 전달",
+      messageString: "value",
     }
   },
 }

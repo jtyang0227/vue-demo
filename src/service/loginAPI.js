@@ -1,5 +1,9 @@
 import axios from 'axios';
 
+const question = () => {
+  return axios.get('https://yesno.wtf/api');
+}
+
 const getUserInfo = (uid, password) => {
   return axios.get('/endpoint-for-get-user-info', {
     params: {
@@ -32,3 +36,5 @@ export default {
     }
   }
 }
+
+export { question }
