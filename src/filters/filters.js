@@ -6,14 +6,13 @@ Vue.use(filters);
 Object.keys(filters).forEach(function(key) {
   Vue.filter(key, filters[key]);
 });
-
-const capitalize() {
+const capitalize = () => {
   if (!value) return '';
   value = value.toString()
   return value.charAt(0).toUpperCase() + value.slice(1);
 }
 
-const translate() {}
+const translate = () => {}
 
 export {
   capitalize,

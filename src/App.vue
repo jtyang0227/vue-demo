@@ -26,7 +26,6 @@ export default {
     // emit(2)
     paramNum(value) {
       console.log('emit value callback');
-      alert('emit : ' + value);
       this.num = value;
     }
   },
